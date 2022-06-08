@@ -45,13 +45,15 @@ Open the extracted file in VS code: you should see following files-
   * **[styles.css](https://github.com/Shruti192/DSA_SE/blob/main/public/styles.css)**: contains css file for styling our web page.
   * images used in styles.css
 * Folder **[views](https://github.com/Shruti192/DSA_SE/tree/main/views)** which contains following files:- 
-  * **[index.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/index.ejs)**
-  * **[detail.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/detail.ejs)**
-  * **[error.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/error.ejs)**
+  My web app contains three page basically:-  HomePage, Problem_details Page, error Page
+  * **[index.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/index.ejs)**: This file contains ejs code for Home page and JS code to fire search and get request on click. and after this this page it self displays top10 match results from data-base.
+  * **[detail.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/detail.ejs)**: This file contains ejs code for Problem_Details page. which renders details of problem selected from that top 10 result displayed on home page.
+  * **[error.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/error.ejs)**: Get renders when any error is caught or ejs file which dne is requested to get.
   * **[partials_folder](https://github.com/Shruti192/DSA_SE/tree/main/views/partials)**: which further contains:- 
-    * **[head.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/head.ejs)**
-    * **[footer.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/footer.ejs)**
-    * **[nav.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/nav.ejs)**
+    These contains the part that generalkly is part of all main pages being rendered, here is index.ejs, detail.ejs and error.ejs
+    * **[head.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/head.ejs)**: This file contains ejs code for header
+    * **[footer.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/footer.ejs)**: This file contains ejs code for footer
+    * **[nav.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/nav.ejs)**: This file contains ejs code for navigation bar
 
 
 
