@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA | <%=heading %></title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
+body {
+  max-width: 1300px;
+  margin: 20px auto;
+  border: #777 10px;
+  padding: 20px 20px;
+  font-family: "Noto Serif", serif;
+  color: #c7c4bb;
+  background-image: url(/dark_wood.png);
+}
+.content {
+  max-width: 1200px;
+  margin: 20px auto;
+  border: #777 10px;
+  padding: 20px 20px;
+  align-content: center;
+  font-size: 20px;
+}
+p,
+h2,
+h3,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(231, 217, 192);
+}
+
+/* nav & footer styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #edbe68;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav li {
+  list-style-type: none;
+  margin-left: 23px;
+}
+nav h1 {
+  font-size: 2em;
+  column-rule-color: rgba(221, 221, 221, 0.97);
+}
+
+nav a {
+  color: #d1ccbe;
+  font-weight: 300;
+}
+footer {
+  color: #d1ccbe;
+  text-align: center;
+  margin: 80px auto 20px;
+}
+.bttn {
+  padding: 5px;
+  width: 20%;
+  float: left;
+  background: #505255;
+  border: 0;
+  box-sizing: border-box;
+  color: #ffc132;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Noto Serif", serif;
+}
+
+.texture {
+  background: url(/wooden-texture.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  /* font-family: Catamaran, sans-serif; */
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#title {
+  font-size: 28px;
+  color: #362c14;
+}
+.details {
+  max-width: 1200px;
+  border: #332c1c solid 6px;
+  padding: 10px;
+  border-top-right-radius: 50px;
+}
+a:hover {
+  color: #65a383;
+  font-size: larger;
+}
+.see:hover {
+  color: #65a383;
+  font-size: 25px;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="site-title">
+        <a href="/"><h1 class="texture">DSA Search Engine</h1></a>
+      </div>
+      <ul>
+        <li>
+          <a href="<%= url_ %>" target="_blank" rel="noreferrer noopener"
+            >visit_to_the_orignal_website</a
+          >
+        </li>
+        <li><a href="/">Home_Page</a></li>
+      </ul>
+    </nav>
+    <div class="details content" style="background-color: #53482cdd">
+      
+        <p id="title" style="color: #beb08e"><strong><%= title%></strong></p>
+      </p>
+      <div class="content" style="background-color: #fde6aed3">
+        <p style="color:#1b1404dd ;">
+          <%- content %> <br>
+          <a href="<%= url_ %>" target="_blank" rel="noreferrer noopener"
+            style="color:#1b1404dd"><u class="see">see_full</u></a
+          >
+        </p>
+      </div>
+    </div>
+    <br />
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>

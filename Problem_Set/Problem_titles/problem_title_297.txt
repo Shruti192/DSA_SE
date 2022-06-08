@@ -1,0 +1,1 @@
+Max sum Min sum - DYNMCPRG

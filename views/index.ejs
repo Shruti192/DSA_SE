@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs') %>
+  <body>
+    <%- include('partials/nav.ejs') %>
+    <p id="title">Find your DSA problem here!</p>
+    <br />
+    <div class="box1">
+      <form>
+        <input
+          type="text"
+          placeholder="Enter your Query :)"
+          name="question"
+          id="question"
+        />
+        <!-- <input class="bttn" type="submit" value="Ask 🤖" /> -->
+        <button class="bttn" type="submit">Ask 🤖</button>
+      </form>
+      <br /><br /><br />
+      <div class="loading"></div>
+
+      <div class="result">
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url">
+            <a href=""></a>
+          </div>
+          <div class="body"></div>
+        </div>
+        <br />
+        <div class="question">
+          <div class="title"></div>
+          <div class="url"></div>
+          <div class="body"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <%- include('partials/footer.ejs') %>
+</html>
+<script>
+  var form = document.querySelector("form"); //stores info about tag form
+  var questionElement = form.question;
+  var questions = document.querySelectorAll(".question");
+  var Titles = document.querySelectorAll(".title");
+  var urls = document.querySelectorAll(".url");
+  var quesBody = document.querySelectorAll(".body");
+  var loadingDiv = document.querySelector(".loading");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const question = questionElement.value;
+    for (let i = 0; i < 10; i++) {
+      Titles[i].innerHTML = ``;
+      urls[i].innerHTML = ``;
+      quesBody[i].innerHTML = ``;
+    }
+
+    loadingDiv.innerHTML = `Loading...`;
+
+    //fetch
+    try {
+      const result = await fetch(`/search?question=${question}`, {
+        method: "GET",
+      });
+      const data = await result.json();
+      console.log(data);
+      loadingDiv.innerHTML = ``;
+      for (let i = 0; i < 10; i++) {
+        Titles[
+          i
+        ].innerHTML = `<h4><a href="/detail/${data[i].id}"  target="_blank" rel="noreferrer noopener"><strong>${data[i].title} </strong> </a></h4>`;
+        urls[
+          i
+        ].innerHTML = `<a href="/detail/${data[i].id}"  target="_blank" rel="noreferrer noopener"><u>click_here <u> </a>`;
+        quesBody[i].innerHTML = `<p> ${data[i].statement} </p>`;
+      }
+    } catch (error) {
+      alert(error);
+    }
+  });
+</script>

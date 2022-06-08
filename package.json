@@ -1,0 +1,22 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "child_process": "^1.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "path": "^0.12.7",
+    "spelling-corrector": "^3.0.0",
+    "stem-porter": "^0.0.1",
+    "stopword": "^2.0.2"
+  }
+}
