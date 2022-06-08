@@ -38,7 +38,7 @@ Open the extracted file in VS code: you should see following files-
 * **[app.js](https://github.com/Shruti192/DSA_SE/blob/main/app.js)**:  This file contains javascript code and is backbone of the project this is from where the project will start running. It contains the info about on which port our app will be running and handles the fired request. This also contains BM25 smilarity algoritm  which gets executed whien /search is fired which gets fired when we click on "Ask Me" button near search box.
 * **[Procfile](https://github.com/Shruti192/DSA_SE/blob/main/Procfile)**: This is a text file.
   Heroku apps include a Procfile that specifies the commands that are executed by the app on startup. Read more in detail about it [here](https://devcenter.heroku.com/articles/procfile).
-* **gitignore**: This is a text file that specifies intentionally untracked files that Git should ignore. Read more about it [here](https://git-scm.com/docs/gitignore).
+* **[gitignore](https://github.com/Shruti192/DSA_SE/blob/main/.gitignore)**: This is a text file that specifies intentionally untracked files that Git should ignore. Read more about it [here](https://git-scm.com/docs/gitignore).
 * **[Package.json](https://github.com/Shruti192/DSA_SE/blob/main/package.json)**: This file contains different project-related metadata. This file is used to provide information to npm so that it can identify the project and handle its dependencies. It may also include other metadata like as a project description, the version of the project in a certain distribution, licence information, and even configuration data, all of which are important to both npm and the package's end users. Read more about it [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
 * **[README.md](https://github.com/Shruti192/DSA_SE/blob/main/README.md)**: This file contains details about project, it's directories and how to get started with this project and how to use it.
 * Folder **[public](https://github.com/Shruti192/DSA_SE/tree/main/public)** which contains following files:- 
@@ -58,44 +58,15 @@ Open the extracted file in VS code: you should see following files-
 
 
 ### Executing program
-* Open the extracted file in VS code:-
-* How to run the program
-* Step-by-step bullets
+* Open the extracted file in VS code.
+* come inside this directory itself i.e this project folder directory.
+* Run following command on terminal to install all npm packages present in package-JSON dependencies:-
 ```
-code blocks for commands
+npm install
 ```
-
-## Help
-
-Any advise for common problems or issues.
+* check weather this project is running on localhost properly or not using below command:-
 ```
-command to run if program contains helper info
+nodemon app
 ```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* Now open new tab on your search Engine, and search localhost:3000.
+* If you are able to run the search engine locally without getteing any error in your terminal. congratulations this project is working locally on your PC.
