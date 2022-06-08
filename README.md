@@ -22,6 +22,14 @@ To work with this project you need:-
 * [Git](https://git-scm.com/downloads)
 * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
+### Knowledge used for building this Project:- 
+* Python
+* Html and CSS
+* Java-Script
+* NodeJS, ExpressJS
+* BM25 Similarity Algorithm
+* Stemming & Lemmitization and  SpellCorrector from NLP.
+
 ### Installing
 
 * Downloading this  project on your PC:-
