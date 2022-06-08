@@ -51,7 +51,7 @@ Open the extracted file in VS code: you should see following files-
   * **[partials_folder](https://github.com/Shruti192/DSA_SE/tree/main/views/partials)**: which further contains:- 
     * **[head.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/head.ejs)**
     * **[footer.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/footer.ejs)**
-    * *[*nav.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/nav.ejs)**
+    * **[nav.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/nav.ejs)**
 
 
 
