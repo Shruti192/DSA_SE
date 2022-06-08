@@ -1,1 +1,0 @@
-Maximum Pairwise Modular Sum - MXMODSUM

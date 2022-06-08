@@ -1,1 +1,0 @@
-Cumulative Palindrome Count - CUPACO
