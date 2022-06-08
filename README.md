@@ -42,16 +42,16 @@ Open the extracted file in VS code: you should see following files-
 * **[Package.json](https://github.com/Shruti192/DSA_SE/blob/main/package.json)**: This file contains different project-related metadata. This file is used to provide information to npm so that it can identify the project and handle its dependencies. It may also include other metadata like as a project description, the version of the project in a certain distribution, licence information, and even configuration data, all of which are important to both npm and the package's end users. Read more about it [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
 * **[README.md](https://github.com/Shruti192/DSA_SE/blob/main/README.md)**: This file contains details about project, it's directories and how to get started with this project and how to use it.
 * Folder **[public](https://github.com/Shruti192/DSA_SE/tree/main/public)** which contains following files:- 
-  * **styles.css**
-  * images: used in styles.css
-* Folder **views** which contains following files:- 
-  * **index.ejs**
-  * **detail.ejs**
-  * **error.ejs**
-  * **partials_folde**r: which further contains:- 
-    * **header.ejs**
-    * **footer.ejs**
-    * **nav.ejs**
+  * **[styles.css](https://github.com/Shruti192/DSA_SE/blob/main/public/styles.css)**: contains css file for styling our web page.
+  * images used in styles.css
+* Folder **[views](https://github.com/Shruti192/DSA_SE/tree/main/views)** which contains following files:- 
+  * **[index.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/index.ejs)**
+  * **[detail.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/detail.ejs)**
+  * **[error.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/error.ejs)**
+  * **[partials_folder](https://github.com/Shruti192/DSA_SE/tree/main/views/partials)**: which further contains:- 
+    * **[head.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/head.ejs)**
+    * **[footer.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/footer.ejs)**
+    * *[*nav.ejs](https://github.com/Shruti192/DSA_SE/blob/main/views/partials/nav.ejs)**
 
 
 
