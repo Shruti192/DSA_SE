@@ -2,6 +2,7 @@
 
 This web development  project is on building a Search Engine dedicated for finding Data Structure and Algorithm problems.
 * [ My Deployed app](https://dsa-search-engine-ss.herokuapp.com/)
+* [ AZ Hackathone Certificate](https://www.learning.algozenith.com/certificates?id=AZ194E467337146)
 
 
 ## Description
