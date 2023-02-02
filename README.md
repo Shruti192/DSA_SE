@@ -7,7 +7,7 @@ This web development  project is on building a Search Engine dedicated for findi
 ## Description
 This project is on a [search engine](https://dsa-search-engine-ss.herokuapp.com/) which takes an input from a user in the search box and returns top 10 matches of DSA Problem from the database.
 Database for this project consists of around 1500 questions.
-We build this project and then deployed it using heroku.
+We build this project and then deployed it using heroku. {Deployed website is now not working because of change is policy of Heroku (free deployment service is currently not available)}
 
 ## Getting Started
 
