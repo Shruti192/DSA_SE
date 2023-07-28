@@ -81,3 +81,7 @@ nodemon app
 
 ### Adding Screenshots
 ![image](DSE_HP.png)
+
+![image](DSE_SR.png)
+
+![image](DSE_P.png)
