@@ -78,3 +78,6 @@ nodemon app
 ```
 * Now open new tab on your search Engine, and search localhost:3000.
 * If you are able to run the search engine locally without getteing any error in your terminal. congratulations this project is working locally on your PC.
+
+### Adding Screenshots
+![image](DSE_HP.png)
